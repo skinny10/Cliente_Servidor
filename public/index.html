@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+</head>
+<body>
+    <h1>Student Management</h1>
+    <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="rfc">RFC:</label>
+        <input type="text" id="rfc" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <label for="bloodType">Blood Type:</label>
+        <input type="text" id="bloodType" required>
+        <label for="semesters">Semesters:</label>
+        <input type="number" id="semesters" required>
+        <label for="subjectsPassed">Subjects Passed:</label>
+        <input type="number" id="subjectsPassed" required>
+        <label for="subjectsFailed">Subjects Failed:</label>
+        <input type="number" id="subjectsFailed" required>
+        <button type="submit">Add Student</button>
+    </form>
+    <div id="studentsList"></div>
+    <script src="../server/app.ts"></script>
+</body>
+</html>
